@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorded Data</title>
+</head>
+<body>
+
+    <!-- Table Container -->
+    <div class="table-container">
+        <h1>Recorded Data:
+            <button style="vertical-align: middle;" class="print-button" onclick="window.print()">
+                <img width=30px src="print.jpg" alt="Print">
+            </button>
+        </h1>
+        <!-- Data Table -->
+        <table id="recordTable">
+            <thead>
+                <!-- Table Header Row -->
+                <tr>
+                    <th onclick="sortTable(0)">Name</th>
+                    <th onclick="sortTable(1)">Gender</th>
+                    <th onclick="sortTable(2)">Email</th>
+                    <th onclick="sortTable(3)">Phone</th>
+                    <th onclick="sortTable(4)">Occupation</th>
+                    <th class="save-header">Save</th>
+                    <th class="edit-header">Edit</th>
+                    <th class="delete-header">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="table.js"></script>
+
+</body>
+</html>
